@@ -55,6 +55,15 @@ module Discordrb::Events
                else
                  e
                end
+        end,
+        matches_all(@attributes[:server], event.server) do |a, e|
+          a == if a.is_a? String
+                 e.name
+               elsif a.is_a? Integer
+                 e.id
+               else
+                 e
+               end
         end
       ].reduce(true, &:&)
     end
@@ -114,6 +123,15 @@ module Discordrb::Events
         matches_all(@attributes[:name], event.name) do |a, e|
           a == if a.is_a? String
                  e.to_s
+               else
+                 e
+               end
+        end,
+        matches_all(@attributes[:server], event.server) do |a, e|
+          a == if a.is_a? String
+                 e.name
+               elsif a.is_a? Integer
+                 e.id
                else
                  e
                end
