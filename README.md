@@ -158,7 +158,7 @@ end
 
 ## Support
 
-You can find me (@meew0, ID 66237334693085184) on the unofficial Discord API server - if you have a question, just ask there, I or somebody else will probably answer you: https://discord.gg/3Trm6FW
+You can find us on the unofficial Discord API server - if you have a question just ask there. Support is provided on a volunteer basis, those available will try to answer your question when possible: https://discord.gg/3Trm6FW
 
 ## Development
 
